@@ -1,0 +1,63 @@
+
+
+html {
+  margin: 0;
+  font-family: 'Verdana';
+  font-smoothing: subpixel-antialiased;
+  text-rendering: geometricPrecision;
+}
+
+/*Creates initial gradient, sets size. Take note of gradient direction*/
+
+body {  
+  background: linear-gradient(to bottom, #ef8a25, #efd425, #ef2525, #ef2525, #ef25c3 );
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/*Below is necessary because without it, the gradient looks like it was made by a five year old.*/
+
+body:before{
+  content:'';
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+  background: linear-gradient(to right bottom, rgba(255,255,255,0.2), #f5ad75 75%);
+}
+
+
+body {
+  margin: 0;
+  font-size: 1.15rem;
+  line-height: 1.4em;
+}
+
+/*Creating new bubble tags will create a new bubble. This can be a way of seperating blog posts.
+Darker shadows will really make the bubbles (and text)...pop! Ba-dum-tsss.
+*/
+
+#bubble {
+  background-color: #FFFFFF;
+  margin: 80px 10%;
+  padding: 30px 60px;
+  border-radius: 20px;
+  box-shadow: 0 3px 4px 0 rgba(50,50,93,0.10), 0 3px 26px 0 rgba(0,0,0,0.20);
+}
+
+/* Using main tags creates a lighter sub bubble within a bubble.*/
+
+main {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  color: #6b6b6b;
+  margin: 40px 0;
+  box-sizing: border-box;
+}
+
+
+header {
+  box-sizing: border-box;
+}
